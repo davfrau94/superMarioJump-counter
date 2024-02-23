@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mario-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+.title-container {
+    margin: 10px 0 0 60px;
+    background-color: rgb(254, 81, 81);
+    border: 5px solid antiquewhite;
+    border-radius: 50px;
+    padding: 5px;
+}
+.title{
+    margin: 10px;
+    font-size: 40px;
+    color:antiquewhite;
+    text-align: center;
+}
+.social-container {
+    max-width: 200px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* counter */
+.counter-container {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 10px;
+    bottom: 100px;
+}
+.display-container {
+    color:antiquewhite;
+    text-align: center;
+}
+.display-container p {
+    font-size: 100px;
+    margin: 20px 0;
+}
+/* Buttons */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 200px;
+    margin-left: 40px;
+}
+.button-container button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    background-color: rgb(254, 81, 81);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight:600;
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
+}
+.button-container button:hover {
+    cursor: pointer;
+    background-color: rgb(252, 43, 43);
+}
+#github:hover,
+#linkedin:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 40%;
+}
+.counter-plus button, 
+.counter-minus button {
+    font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+    .title{
+        margin: 10px;
+        font-size: 25px;
+        color:antiquewhite;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .social-container {
+        margin: 20px ;
+        display: flex;
+        flex-direction: column;
+    }
+    .display-container {
+        position: fixed;
+        bottom:50px;
+        left: 60px;
+    }
+    .display-container p {
+        font-size: 80px;
+    }
+    .button-container {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+    }
+    .start-button {
+        position: fixed;
+        right: 50px;
+        bottom: 15px;
+        font-size: 25px;
+    }
+    .counter-reset {
+        position: fixed;
+        left: 15px;
+        bottom: 15PX;
+        font-size: 25px;
+    }
+    .counter-plus {
+        position: fixed;
+        right: 40px;
+        bottom: 90px;
+    }
+    .counter-minus {
+        position: fixed;
+        right: 120px;
+        bottom: 90px;
+    }
+    .counter-plus button, 
+    .counter-minus button {
+    font-size: 20px;
+    }
+}
