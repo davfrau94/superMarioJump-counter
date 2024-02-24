@@ -1,5 +1,5 @@
 <h1><a target="_blank" href="https://supermariojump-counter.netlify.app"/>SUPER MARIO JUMP COUNTER</a></h1>
-<p>This project was created for the practical exam of the Javascript Basic course at Start2Impact.</p>
+<p>This project was created for the practical exam of the Javascript Basic course at <a href="https://www.start2impact.it">Start2Impact University</a>.</p>
 <p>The objective was to develop a JavaScript application that allows the user to increase and decrease the value of the counter. 
 Upon entering the page, the user will see 0 as the counter value and will have two +/- buttons available to change the counter value.</p>
 
